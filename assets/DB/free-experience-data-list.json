@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "imgUrl": "./images/cont3-purunet.webp",
+    "title": "푸르넷",
+    "desc": "우리 아이에게 딱 맞는 어댑티브 러닝 & 케어 시스템",
+    "btn": "무료체험 신청하기"
+  },
+  {
+    "id": 2,
+    "imgUrl": "./images/cont3-englishbuddy.webp",
+    "title": "잉글리시버디",
+    "desc": "세계가 인정한 콘텐츠로 독보적인 영어 학습",
+    "btn": "무료체험 신청하기"
+  },
+  {
+    "id": 3,
+    "imgUrl": "./images/cont3-kamping.webp",
+    "title": "캠핑 키드키드",
+    "desc": "4 ~ 7세 공부 두뇌를 키우는 가장 과학적인 3단계 학습",
+    "btn": "무료체험 신청하기"
+  }
+]
