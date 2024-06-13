@@ -342,7 +342,7 @@ $(function () {
 /* Ajax */
 // 이미지 슬라이드
 $.ajax({
-  url: "./assets/DB/free-experience-data-list.json",
+  url: "https://gonghanna.github.io/Personal-Project/assets/DB/free-experience-data-list.json",
   dataType: "json",
   success: (data) => {
     if (data) {
@@ -365,7 +365,7 @@ $.ajax({
 });
 // 후기
 $.ajax({
-  url: "./assets/DB/review-data-list.json",
+  url: "https://gonghanna.github.io/Personal-Project/assets/DB/review-data-list.json",
   dataType: "json",
   success: (data) => {
     if (data) {
