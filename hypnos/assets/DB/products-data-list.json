@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "imgUrl": "./images/product-slide01.png",
+    "type": "MATTRESS",
+    "name": "Orthos Origins5",
+    "price": "2,070,000원"
+  },
+  {
+    "id": "2",
+    "imgUrl": "./images/product-slide02.png",
+    "type": "MATTRESS",
+    "name": "Cotton Charm",
+    "price": "2,016,000원"
+  },
+  {
+    "id": "3",
+    "imgUrl": "./images/product-slide03.png",
+    "type": "MATTRESS",
+    "name": "Wool Elegance ",
+    "price": "2,520,000원"
+  },
+  {
+    "id": "4",
+    "imgUrl": "./images/product-slide04.png",
+    "type": "FRAME",
+    "name": "Alexandra Frame",
+    "price": "870,000원"
+  },
+  {
+    "id": "5",
+    "imgUrl": "./images/product-slide05.png",
+    "type": "FRAME",
+    "name": "Elizabeth Frame",
+    "price": "986,000원"
+  },
+  {
+    "id": "6",
+    "imgUrl": "./images/product-slide06.png",
+    "type": "FRAME",
+    "name": "Paris Frame",
+    "price": "760,000원"
+  }
+]

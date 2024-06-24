@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "imgUrl": "./images/hotel-slide01.png",
+    "name": "The goring hotel",
+    "desc": "버킹엄 궁전에 근접한 영국에서 가장 오래된 호텔"
+  },
+  {
+    "id": "2",
+    "imgUrl": "./images/hotel-slide02.png",
+    "name": "Marriott Hotel Grosvenor",
+    "desc": "미국의 유명 매리어트 호텔"
+  },
+  {
+    "id": "3",
+    "imgUrl": "./images/hotel-slide03.png",
+    "name": "InterContinental London Park Lane",
+    "desc": "서울 강남구 삼성동에 위치한 인터컨티넨탈 호텔"
+  },
+  {
+    "id": "4",
+    "imgUrl": "./images/hotel-slide04.png",
+    "name": "Dubai Atlantis The Royal",
+    "desc": "두바이-아틀란티스 더 로얄 호텔"
+  },
+  {
+    "id": "5",
+    "imgUrl": "./images/hotel-slide05.png",
+    "name": "Sunseeker Casino royale",
+    "desc": "세계 최고의 럭셔리 고성능 모터 요트 브랜드"
+  },
+  {
+    "id": "6",
+    "imgUrl": "./images/hotel-slide06.png",
+    "name": "Fingal - A Luxury Floating Hotel",
+    "desc": "럭셔리 선상 호텔 - 핑갈"
+  }
+]

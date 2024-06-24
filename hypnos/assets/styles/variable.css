@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* 
+  font-family: "Playfair Display", serif; italic
+  font-family: "Poppins", sans-serif; 400, 600
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;600&display=swap');
+
+/* 변수 설정 */
+:root {
+  /* fonts */
+  --sans-serif-fonts: "Poppins", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --serif-fonts: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  /* font size */
+  /* 
+    pc : 250px 90px 80px 
+    70px 60px 50px 40px 35px 30px 25px 20px 18px 17px 15px 14px 10px
+  */
+  --deco-lg-title : 15.625rem; /* 250px */
+  --deco-md-title : 5.625rem; /* 90px */
+  --deco-sm-title : 5rem; /* 80px */
+  --title-xlg : 4.375rem; /* 70px */
+  --title-lg : 3.75rem; /* 60px */
+  --title-md : 3.125rem; /* 50px */
+  --title-sm : 2.5rem; /* 40px */
+  --title-xsm : 2.188rem; /* 35px */
+  --title-xxsm : 1.875rem; /* 30px */
+  --desc-xxlg: 25px;
+  --desc-xlg: 20px;
+  --desc-lg: 18px;
+  --desc-md: 17px;
+  --desc-sm: 15px;
+  --desc-xsm: 14px;
+  --desc-xxsm: 10px;
+  /* 
+    m : 30px 25px 22px 20px 18px 14px 13px 12px 10px 8px
+  */
+
+  /* font weight */
+  --fonts-semibold : "600";
+
+  /* colors */
+  --primary-black: #2E2E27;
+  --primary-darkblue: #151925;
+  --primary-darkblue: #1C274C;
+  --primary-gray10: #EEEEEE;
+  --primary-gray30: #D9D9D9;
+
+  /* border-radius */
+  --primary-border-radius: 30px;
+}
