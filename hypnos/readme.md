@@ -10,6 +10,14 @@
 1. [코드 분석](https://www.figma.com/design/YS7BAEqnNXI3SfVpiCgOro/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B0%98%EC%9D%91%ED%98%95?node-id=0-1&t=MptEZfOnVHDvNMjr-1, "피그마로 바로가기")
 2. [구현 사이트 보러가기](https://gonghanna.github.io/artboda/)
 
+## 240624 ##
+- 웹버전 디자인 및 모바일 버전 디자인 완료
+- 이미지 소스 정리
+- index.html 생성
+- 관련 css 및 js 파일 생성
+- json 파일 작성
+- 내일 해야할 일 : 비디오 링크 수정, footer 작업, html 작업 끝난 후 css 작업 시작하기
+
 ## 240621 ##
 - 개인 프로젝트 웹버전 디자인 시작
 - 폰트 다운로드
