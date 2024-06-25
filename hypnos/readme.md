@@ -19,6 +19,12 @@
 - js 이벤트 분석 및 적용 (스크롤 이벤트, 허버 이벤트 등)
 - 내일 해야할 일 : 스크롤 이벤트 적용, 태블릿 및 모바일 버전 css 작업
 
+clamp 함수 공부
+![clamp](https://github.com/GongHanna/Personal-Project/assets/160007300/bce7bcb0-412d-48fe-8f51-67812c0b3334)
+
+이벤트 분석
+![이벤트](https://github.com/GongHanna/Personal-Project/assets/160007300/a4090468-b6cd-4a2e-acf8-adae1035efd9)
+
 ## 240624 ##
 - 웹버전 디자인 및 모바일 버전 디자인 완료
 - 이미지 소스 정리
