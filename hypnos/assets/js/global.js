@@ -4,7 +4,7 @@ $('a[href="#"]').on('click', (e) => {
 });
 
 /* 로고 클릭 시 페이지 맨 위로 이동 */
-$(".header .logo").on("click", () => {
+$(".header .logo a").on("click", () => {
   scrollTo({
     top: 0,
     behavior: "smooth",
@@ -24,7 +24,7 @@ $.ajax({
           <h3 class="item-name">${elem.name}</h3>
           <p class="item-price">${elem.price}</p>
           `;
-        $('.products .slide-wrapper .slide-list .slide-item').eq(idx).append(productList);
+        $('.products .slide-wrapper .slide-item').eq(idx).append(productList);
       });
     }
   },
@@ -84,7 +84,9 @@ $.ajax({
     if (data) {
       $.each(data, (idx, elem) => {
         const guideList = `
-          <img src=${elem.imgUrl} alt=${elem.name}>
+          <div class="img-box">
+            <img src=${elem.imgUrl} alt=${elem.name}>
+          </div>
           <p class="item-type">${elem.type}</p>
           <h3 class="item-name">${elem.name}
             <span class="spacing">${elem.spacing}</span>

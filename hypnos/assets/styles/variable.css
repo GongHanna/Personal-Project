@@ -13,6 +13,10 @@
     "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
   --serif-fonts: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+  /* swiper */
+  --swiper-pagination-color: #2E2E27;
+  --swiper-navigation-color: #2E2E27;
+  --swiper-navigation-sides-offset: 0;
   /* font size */
   /* 
     pc : 250px 90px 80px 
@@ -39,12 +43,12 @@
   */
 
   /* font weight */
-  --fonts-semibold : "600";
+  --fonts-semibold : 600;
 
   /* colors */
   --primary-black: #2E2E27;
   --primary-darkblue: #151925;
-  --primary-darkblue: #1C274C;
+  --primary-blue: #1C274C;
   --primary-gray10: #EEEEEE;
   --primary-gray30: #D9D9D9;
 

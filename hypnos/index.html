@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>hypnos</title>
+  <title>히프노스 코리아</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <!-- favicon -->
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
@@ -16,7 +16,9 @@
   <!-- reset css -->
   <link rel="stylesheet" href="./assets/styles/reset.css">
   <!-- 공통된 css -->
-  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/global-pc.css">
+  <link rel="stylesheet" href="./assets/styles/global-t.css">
+  <link rel="stylesheet" href="./assets/styles/global-m.css">
   <link rel="stylesheet" href="./assets/styles/variable.css">
   <link rel="stylesheet" href="./assets/styles/animation.css">
   <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
@@ -37,12 +39,16 @@
 
 <body>
   <!-- header -->
-  <header class="header">
+  <header class="header flex-box">
     <!-- global-menu -->
     <nav class="global-menu-wrapper">
-      <ul class="global-menu">
-        <li class="mobile-btn"><a href=""><img src="./images/m-menu-icon.svg" alt="menu-icon">메뉴</a></li>
-        <li><a href="#">SHOP</a></li>
+      <ul class="mobile-btn grid-box">
+        <li>바1</li>
+        <li>바2</li>
+        <li>바3</li>
+      </ul>
+      <ul class="global-menu flex-box">
+        <li><a href="#" class="active">SHOP</a></li>
         <li><a href="#">BRAND</a></li>
         <li><a href="#">GUIDE</a></li>
         <li><a href="#">NEWS</a></li>
@@ -50,20 +56,20 @@
     </nav>
 
     <!-- logo -->
-    <h1 class="logo"><a href="./index.html">로고</a></h1>
+    <h1 class="logo"><a href="#">로고</a></h1>
 
     <!-- sub-menu -->
     <nav class="sub-menu-wrapper">
-      <ul class="sub-menu">
-        <li><a href=" #"></a></li>
-        <li><a href="#"></a></li>
+      <ul class="sub-menu flex-box">
+        <li><a href="#" class="search">찾기</a></li>
+        <li><a href="#" class="shopping">쇼핑</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- contents -->
   <!-- main -->
-  <article class="main">
+  <article class="main grid-box">
     <div class="text-box">
       <h2 class="main-title">The Queen's<br>
         Awards</h2>
@@ -100,7 +106,6 @@
       </div>
     </section>
     <section class="grid-box">
-      <img src="./images/natural-materia.png" alt="natural-materia">
       <div class="text-box">
         <h2 class="title">The HIGHEST<br>
           Natural Material</h2>
@@ -112,6 +117,7 @@
         </p>
         <a href="#" class="more-btn">View More</a>
       </div>
+      <img src="./images/natural-materia.png" alt="natural-materia">
     </section>
   </article>
 
@@ -119,37 +125,24 @@
   <article class="products">
     <h2 class="common-title">PRODUCTS</h2>
     <!-- slide -->
-    <div class="slide-wrapper">
+    <div class="slide-wrapper swiper main-swiper">
       <!-- 슬라이드 아이템 / json 연결 -->
-      <ul class="slide-list">
-        <li class="slide-item">
+      <ul class="slide-list flex-box swiper-wrapper">
+        <li class="slide-item swiper-slide">
           <!-- <img src="" alt="" class="item-img">
           <p class="item-type"></p>
           <h3 class="item-name"></h3>
           <p class="item-price"></p> -->
         </li>
-        <li class="slide-item">
-        </li>
-        <li class="slide-item">
-        </li>
-        <li class="slide-item">
-        </li>
-        <li class="slide-item">
-        </li>
-        <li class="slide-item">
-        </li>
+        <li class="slide-item swiper-slide"></li>
+        <li class="slide-item swiper-slide"></li>
+        <li class="slide-item swiper-slide"></li>
+        <li class="slide-item swiper-slide"></li>
+        <li class="slide-item swiper-slide"></li>
       </ul>
-      <!-- 슬라이드 버튼 -->
-      <div class="button-box">
-        <p class="prev-btn"><a href="#">이전버튼</a></p>
-        <p class="next-btn"><a href="#">다음버튼</a></p>
-      </div>
-      <!-- 페이지네이션 -->
-      <div class="pagination-box">
-        <p class="pagi-btn"><a href="">버튼1</a></p>
-        <p class="pagi-btn"><a href="">버튼2</a></p>
-        <p class="pagi-btn"><a href="">버튼3</a></p>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination main-page-no"></div>
     </div>
   </article>
 
@@ -158,7 +151,7 @@
     <h2 class="common-title">HAND<br>
       TECHNOLOGY</h2>
     <!-- json 연결 -->
-    <ul class="technology-list">
+    <ul class="technology-list grid-box">
       <li class="technology-item">
         <!-- <img src="" alt="">
         <h3 class="item-name">
@@ -184,34 +177,26 @@
       </p>
     </div>
     <!-- slide -->
-    <div class="slide-wrapper">
+    <div class="slide-wrapper swiper sub-swiper">
       <!-- 슬라이드 아이템/ json 연결 -->
-      <ul class="slide-list">
-        <li class="slide-item">
+      <ul class="slide-list flex-box swiper-wrapper">
+        <li class="slide-item swiper-slide">
           <!-- <img src="" alt="" class="item-img">
           <h3 class="item-name"></h3>
           <p class="item-desc"></p> -->
         </li>
-        <li class="slide-item"></li>
-        <li class="slide-item"></li>
-        <li class="slide-item"></li>
+        <li class="slide-item swiper-slide"></li>
+        <li class="slide-item swiper-slide"></li>
+        <li class="slide-item swiper-slide"></li>
       </ul>
-      <!-- 슬라이드 버튼 -->
-      <div class="button-box">
-        <p class="prev-btn"><a href="#">이전버튼</a></p>
-        <p class="next-btn"><a href="#">다음버튼</a></p>
-      </div>
-      <!-- 페이지네이션 -->
-      <div class="pagination-box">
-        <p class="pagi-btn"><a href="">버튼1</a></p>
-        <p class="pagi-btn"><a href="">버튼2</a></p>
-        <p class="pagi-btn"><a href="">버튼3</a></p>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination main-page-no"></div>
     </div>
   </article>
 
   <!-- best-product -->
-  <article class="best-product">
+  <article class="best-product grid-box">
     <img src="./images/better-sleep.png" alt="better-sleep">
     <div class="text-box">
       <h2 class="title">FOR YOUR
@@ -225,15 +210,17 @@
 
   <!-- store -->
   <article class="store">
-    <h2 class="title">STORE INFO</h2>
-    <p class="desc">히프노스 침대를 만나 보실 수 있는 공식 스토어 안내<br>
-      공식 로드샵 및 신세계, 롯데 백화점 정보를 보실 수 있습니다.</p>
-    <a href="#" class="more-btn">View More</a>
+    <div class="text-box">
+      <h2 class="title">STORE INFO</h2>
+      <p class="desc">히프노스 침대를 만나 보실 수 있는 공식 스토어 안내<br>
+        공식 로드샵 및 신세계, 롯데 백화점 정보를 보실 수 있습니다.</p>
+      <a href="#" class="more-btn">View More</a>
+    </div>
   </article>
 
   <!-- guide -->
-  <article class="guide">
-    <div class="title-box">
+  <article class="guide grid-box">
+    <div class="title-box grid-box">
       <div class="grid-box">
         <h3 class="sub-title">HYPNOS’s</h3>
         <h2 class="title">GUIDE</h2>
@@ -241,24 +228,19 @@
       <a href="#" class="more-btn">View All</a>
     </div>
     <!-- json 연결 -->
-    <ul class="guide-list">
+    <ul class="guide-list flex-box">
       <li class="guide-item">
         <!-- <img src="" alt="">
         <p class="item-type"></p>
         <h3 class="item-name"><span class="spacing"></span></h3> -->
       </li>
-      <li class="guide-item">
-        <!-- <img src="" alt="">
-        <p class="item-type"></p>
-        <h3 class="item-name"><span class="spacing"></span></h3> -->
-      </li>
+      <li class="guide-item"></li>
     </ul>
   </article>
 
   <!-- skills -->
   <article class="skills">
-    <!-- json 연결 -->
-    <ul class="skill-list">
+    <ul class="skill-list grid-box">
       <li class="skill-item">
         <img src="./images/perfomance-icon.svg" alt="perfomance">
         <h3 class="item-name">Better<br>
@@ -314,27 +296,21 @@
       <h2 class="common-title">WITH HYPNOS</h2>
     </div>
 
-    <ul class="community-list">
-      <li class="community-item">
-        <a href="#">
-          <h3 class="item-name">Brand Catalog</h3>
-          <p class="item-desc">당신의 선택을 도와줄<br>
-            카탈로그를 확인해보세요</p>
-        </a>
+    <ul class="community-list grid-box">
+      <li class="community-item brand">
+        <h3 class="item-name">Brand Catalog</h3>
+        <p class="item-desc">당신의 선택을 도와줄<br>
+          카탈로그를 확인해보세요</p>
       </li>
-      <li class="community-item">
-        <a href="#">
-          <h3 class="item-name">Event</h3>
-          <p class="item-desc">히프노스에서 진행중인<br>
-            이벤트를 확인해보세요</p>
-        </a>
+      <li class="community-item event">
+        <h3 class="item-name">Event</h3>
+        <p class="item-desc">히프노스에서 진행중인<br>
+          이벤트를 확인해보세요</p>
       </li>
-      <li class="community-item">
-        <a href="#">
-          <h3 class="item-name">Review</h3>
-          <p class="item-desc">히프노스 고객님의<br>
-            다양한 리뷰을 공유합니다</p>
-        </a>
+      <li class="community-item review">
+        <h3 class="item-name">Review</h3>
+        <p class="item-desc">히프노스 고객님의<br>
+          다양한 리뷰을 공유합니다</p>
       </li>
     </ul>
   </article>
@@ -398,8 +374,8 @@
         <p class="desc">(주)슬립온매트리스</p>
       </li>
       <li claass="sns-item">
-        <a href="https://www.instagram.com/hypnoskorea/" target="_blank">인스타그램</a>
-        <a href="https://www.youtube.com/@user-zb4fl7hd7c/featured" target="_blank">유튜브</a>
+        <a class="insta-icon" href="https://www.instagram.com/hypnoskorea/" target="_blank">인스타그램</a>
+        <a class="youtube-icon" href="https://www.youtube.com/@user-zb4fl7hd7c/featured" target="_blank">유튜브</a>
       </li>
     </ul>
   </footer>

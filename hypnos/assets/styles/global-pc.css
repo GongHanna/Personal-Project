@@ -1,0 +1,188 @@
+@charset "utf-8";
+/***** common *****/
+body {
+  font-family: var(--serif-fonts);
+  font-weight: 400;
+  color: var(--primary-black);
+}
+article {
+  padding: 0 100px;
+  width: 100%;
+}
+.grid-box {
+  display: grid;
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+.common-title {
+  font-size: clamp(25px, 3vw, 60px);
+  text-align: center;
+  font-weight: 400;
+}
+.more-btn {
+  font-family: var(--sans-serif-fonts);
+  font-size: clamp(12px, 3vw, 15px);
+  border-radius: var(--primary-border-radius);
+  padding: 10px 25px;
+  transition: .4s;
+}
+
+/***** header *****/
+.header {
+  width: 100%; height: 80px;
+  padding: 0 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  font-family: var(--sans-serif-fonts);
+  font-size: clamp(14px, 3vw, 17px);
+  z-index: 999;
+}
+/* 모바일 버튼 */
+.header .global-menu-wrapper .mobile-btn {
+  gap: 4px;
+  cursor: pointer;
+  display: none;
+}
+.header .global-menu-wrapper .mobile-btn li {
+  text-indent: -9999px;
+  width: 17px; height: 2px;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-black);
+}
+/* global-menu */
+.header .global-menu-wrapper .global-menu {
+  gap: 20px;
+}
+.header .global-menu-wrapper .global-menu li a {
+  opacity: 0.7;
+  transition: all 0.6s;
+  position: relative;
+  text-decoration: none;
+}
+.header .global-menu-wrapper .global-menu li a::after {
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 1px;
+  background-color: var(--primary-black);
+  content: "";
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+.header .global-menu-wrapper .global-menu li a.active {
+  opacity: 1;
+}
+/* 허버이벤트 */
+.header .global-menu-wrapper .global-menu li a:hover::after {
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+/* logo */
+.header .logo {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .logo a {
+  display: block;
+  width: 182px; height: 42px;
+  text-indent: -9999px;
+  background: url(../../images/logo.png) no-repeat 50% / contain;
+}
+/* sub-menu */
+.header .sub-menu-wrapper .sub-menu {
+  gap: 38px;
+}
+.header .sub-menu-wrapper .sub-menu li a {
+  display: block;
+  text-indent: -9999px;
+  background: no-repeat 50% / contain;
+  width: 28px;
+}
+.header .sub-menu-wrapper .sub-menu li .search {
+  background-image: url(../../images/search-icon.svg);
+}
+.header .sub-menu-wrapper .sub-menu li .shopping {
+  background-image: url(../../images/shopping-icon.png);
+}
+
+/***** footer *****/
+.footer {
+  background-color: var(--primary-darkblue);
+  color: #fff;
+  font-family: var(--sans-serif-fonts);
+  width: 100%;
+  padding: 73px 100px 106px;
+  position: relative;
+}
+/* 푸터 로고 */
+.footer .footer-logo a {
+  display: block;
+  text-indent: -9999px;
+  background: url(../../images/footer-logo.png) no-repeat 50% / contain;
+  width: 250px; height: 89px;
+}
+/* address */
+.footer .address {
+  padding-top: 108px;
+  font-size: clamp(10px, 3vw, 14px);
+  font-style: normal;
+  width: 50%;
+}
+.footer .address .flex-box {
+  justify-content: flex-start;
+  margin-bottom: 27px;
+  gap: 40px;
+}
+.footer .address .address-desc {
+  margin-top: 10px;
+}
+.footer .address .address-desc strong {
+  margin-right: 5px;
+  font-weight: var(--fonts-semibold);
+}
+/* footer-info-list */
+.footer .footer-info-list {
+  position: absolute;
+  top: 133px; right: 100px;
+}
+.footer .footer-info-list li {
+  margin-bottom: 35px;
+}
+.footer .footer-info-list li p {
+  margin-bottom: 10px;
+}
+.footer .footer-info-list li .title {
+  font-size: clamp(8px, 3vw, 14px);
+}
+.footer .footer-info-list li .number {
+  font-size: clamp(14px, 3vw, 20px);
+}
+.footer .footer-info-list li .desc {
+  font-size: clamp(10px, 3vw, 14px);
+}
+.footer .footer-info-list li:last-child {
+  display: flex;
+  gap: 20px;
+}
+.footer .footer-info-list li:last-child a {
+  display: block;
+  text-indent: -9999px;
+  background: no-repeat 50% / contain;
+  width: 38px; height: 38px;
+}
+.footer .footer-info-list li:last-child .insta-icon {
+  background-image: url(../../images/instagram-icon.svg);
+}
+.footer .footer-info-list li:last-child .youtube-icon {
+  background-image: url(../../images/youtube-icon.svg);
+}
