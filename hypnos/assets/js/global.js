@@ -41,12 +41,56 @@ $.ajax({
     if (data) {
       $.each(data, (idx, elem) => {
         const technologyList = `
-          <img src=${elem.imgUrl} alt=${}>
+          <img src=${elem.imgUrl} alt=${elem.spacing}>
           <h3 class="item-name">${elem.name}
             <span class="spacing">${elem.spacing}</span>
           </h3> 
           `;
         $('.technology .technology-list .technology-item').eq(idx).append(technologyList);
+      });
+    }
+  },
+  error: (xhr, status, error) => {
+    console.log('AJAX 요청 실패:', xhr, status, error);
+  }
+});
+
+/* hotels Ajax */
+$.ajax({
+  url: "https://gonghanna.github.io/Personal-Project/hypnos/assets/DB/hotels-data-list.json",
+  dataType: "json",
+  success: (data) => {
+    if (data) {
+      $.each(data, (idx, elem) => {
+        const hotelList = `
+          <img src=${elem.imgUrl} alt=${elem.name} class="item-img">
+          <h3 class="item-name">${elem.name}</h3>
+          <p class="item-desc">${elem.desc}</p>
+          `;
+        $('.hotels .slide-wrapper .slide-list .slide-item').eq(idx).append(hotelList);
+      });
+    }
+  },
+  error: (xhr, status, error) => {
+    console.log('AJAX 요청 실패:', xhr, status, error);
+  }
+});
+
+/* guide Ajax */
+$.ajax({
+  url: "https://gonghanna.github.io/Personal-Project/hypnos/assets/DB/guide-data-list.json",
+  dataType: "json",
+  success: (data) => {
+    if (data) {
+      $.each(data, (idx, elem) => {
+        const guideList = `
+          <img src=${elem.imgUrl} alt=${elem.type}>
+          <p class="item-type">${elem.type}</p>
+          <h3 class="item-name">${elem.name}
+            <span class="spacing">${elem.spacingName}</span>
+          </h3> 
+          `;
+        $('.guide .guide-list .guide-item').eq(idx).append(guideList);
       });
     }
   },
