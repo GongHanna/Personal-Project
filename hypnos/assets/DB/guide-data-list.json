@@ -4,13 +4,13 @@
     "imgUrl": "./images/guide01.png",
     "type": "GUIDELINE",
     "name": "HOW TO BED CARE",
-    "spacingName": "& GUARANTEE"
+    "spacing": "& GUARANTEE"
   },
   {
     "id": "2",
     "imgUrl": "./images/guide02.png",
     "type": "GUIDELINE",
     "name": "HOW TO",
-    "spacingName": "CHOOSE FRAME"
+    "spacing": "CHOOSE FRAME"
   }
 ]

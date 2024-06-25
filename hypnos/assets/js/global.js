@@ -84,10 +84,10 @@ $.ajax({
     if (data) {
       $.each(data, (idx, elem) => {
         const guideList = `
-          <img src=${elem.imgUrl} alt=${elem.type}>
+          <img src=${elem.imgUrl} alt=${elem.name}>
           <p class="item-type">${elem.type}</p>
           <h3 class="item-name">${elem.name}
-            <span class="spacing">${elem.spacingName}</span>
+            <span class="spacing">${elem.spacing}</span>
           </h3> 
           `;
         $('.guide .guide-list .guide-item').eq(idx).append(guideList);
