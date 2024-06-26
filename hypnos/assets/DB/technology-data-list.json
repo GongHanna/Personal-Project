@@ -2,24 +2,28 @@
   {
     "id": "1",
     "imgUrl": "./images/technology01.png",
+    "mobileUrl": "./images/m-technology01.png",
     "name": "HAND",
     "spacing": "TUFTING"
   },
   {
     "id": "2",
     "imgUrl": "./images/technology02.png",
+    "mobileUrl": "./images/m-technology02.png",
     "name": "HAND",
     "spacing": "STITCHING"
   },
   {
     "id": "3",
     "imgUrl": "./images/technology03.png",
+    "mobileUrl": "./images/m-technology03.png",
     "name": "HAND",
     "spacing": "TEASING"
   },
   {
     "id": "4",
     "imgUrl": "./images/technology04.png",
+    "mobileUrl": "./images/m-technology04.png",
     "name": "ACTIVE",
     "spacing": "TURNS"
   }

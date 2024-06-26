@@ -1,3 +1,162 @@
 @charset "utf-8";
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  /***** main *****/
+  .main {
+    height: 60vh;
+    padding: 50px 0 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .main .text-box .main-title {
+    margin-bottom: 8px;
+  }
+
+  /***** introduction *****/
+  .introduction {
+    height: 50vh;
+    background: none;
+    padding-top: 150px;
+  }
+  .introduction .main-title .deco-text:last-of-type::after,
+  .introduction .main-title .deco-text:last-of-type::before {
+    background: none;
+  }
+
+  /***** advantages *****/
+  .advantages {
+    padding: 100px 16px;
+  }
+  .advantages .grid-box {
+    grid-template-columns: 1fr;
+  }
+  .advantages .grid-box img {
+    width: 100%;
+  }
+  .advantages .grid-box:last-child .text-box {
+    order: 2;
+  }
+  .advantages .grid-box .text-box .title {
+    margin: 5% 0;
+  }
+  .advantages .grid-box .text-box .desc {
+    font-size: 14px; 
+  }
+  .advantages .grid-box .text-box .desc .spacing {
+    display: block;
+  }
+
+  /***** products *****/
+  .products {
+    padding-bottom: 50px;
+  }
+  .products .common-title {
+    margin-top: 50px;
+  }
+  /* 슬라이드 swiper */
+  .products .slide-wrapper .slide-list {
+    margin: 50px 0;
+  }
+  .swiper-button-next, .swiper-button-next:after,
+  .swiper-button-prev, .swiper-button-prev:after {
+    width: 15px; height: 30px;
+  }
+
+  /***** technology *****/
+  .technology {
+    padding: 50px 16px;
+  }
+  .technology .technology-list {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 3%;
+  }
+  .technology .technology-list .technology-item img {
+    /* clip-path: inset(5% 20% 15% 10%); */
+    /* width: 398px; height: 383px;
+    object-fit: fill;
+    margin: 0 auto; */
+  }
+  .technology .technology-list .technology-item:nth-child(odd) {
+    padding-top: 0;
+  }
+  .technology .technology-list .technology-item .item-name {
+    font-size: clamp(22px, 3vw, 25px);
+  }
+  .technology .technology-list .technology-item .item-name .spacing {
+    display: inline;
+  }
+
+  /***** hotels *****/
+  .hotels {
+    padding-bottom: 50px;
+  }
+  .hotels .text-box {
+    margin-top: 50px;
+  }
+  .hotels .text-box .desc {
+    font-size: 12px;
+    margin-top: 2%;
+  }
+  .hotels .text-box .desc .spacing {
+    display: block;
+  }
+  /* 슬라이드 swiper */
+  .hotels .slide-wrapper .slide-list {
+    margin: 50px 0;
+  }
+
+  /***** best-product *****/
+  .best-product {
+    padding: 80px 50px;
+  }
+  .best-product .text-box .product-name {
+    font-size: clamp(15px, 3vw, 25px);
+  }
+  .best-product .text-box .desc {
+    font-size: clamp(13px, 3vw, 18px);
+  }
+
+  /***** store *****/
+  .store {
+    height: 500px;
+  }
+  .store .text-box .desc {
+    font-size: clamp(14px, 3vw, 18px);
+  }
+
+  /***** skills *****/
+  .skills {
+    padding: 150px 50px;
+  }
+  .skills .skill-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr 1fr 1fr;
+  }
+  .skills .skill-list .skill-item .item-desc .m-spacing {
+    display: block;
+  }
+
+  /***** community *****/
+  .community {
+    padding: 100px 50px;
+  }
+  .community .text-box {
+    margin-bottom: 80px;
+  }
+  .community .text-box .small-title {
+    font-size: clamp(12px, 3vw, 15px);
+  }
+  .community .community-list {
+    grid-template-rows: minmax(200px, 250px);
+    gap: 30px;
+  }
+  .community .community-list .community-item {
+    padding-top: 130px;
+  }
+
+  /***** media *****/
+  .media {
+    padding: 100px 50px;
+  }
+}

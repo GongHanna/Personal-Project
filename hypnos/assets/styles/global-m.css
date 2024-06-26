@@ -1,1 +1,75 @@
 @charset "utf-8";
+
+@media (max-width: 600px) {
+    /***** common *****/
+    article {
+      padding: 0 16px;
+    }
+    .more-btn {
+      padding: 8px 20px;
+      font-size: 12px;
+    }
+  
+    /***** header *****/
+    .header {
+      padding: 0 16px;
+    }
+    .header .global-menu-wrapper {
+      right: 0;
+    }
+    /* 모바일 버튼 */
+    .header .global-menu-wrapper .mobile-btn {
+      margin-right: 16px;
+      width: 25px; height: 25px;
+    }
+    .header .global-menu-wrapper .mobile-btn li {
+      width: 21px; height: 2px;
+    }
+    /* global-menu */
+    .header .global-menu-wrapper .global-menu {
+      width: 100vw;
+    }
+    /* logo */
+    .header .logo {
+      top: 50%; left: 16px;
+    }
+    .header .logo a {
+      width: 120px; height: 27px;
+    }
+    /* sub-menu */
+    .header .sub-menu-wrapper {
+      right: 80px;
+    }
+    .header .sub-menu-wrapper .sub-menu {
+      gap: 40%;
+    }
+    .header .sub-menu-wrapper .sub-menu li a {
+      width: 23px;
+    }
+  
+    /***** footer *****/
+    .footer {
+      padding: 73px 16px;
+    }
+    /* 푸터 로고 */
+    .footer .footer-logo a {
+      width: 115px; height: 41px;
+    }
+    /* address */
+    .footer .address {
+      padding-top: 400px;
+    }
+    .footer .address .flex-box {
+      margin-bottom: 0;
+      flex-direction: column;
+      align-items: start;
+      gap: 10px;
+    }
+    /* footer-info-list */
+    .footer .footer-info-list {
+      top: 150px; left: 16px;
+    }
+    .footer .footer-info-list li:last-child a {
+      width: 25px; height: 25px;
+    }
+}

@@ -39,18 +39,17 @@ article {
   position: fixed;
   background-color: #fff;
   font-family: var(--sans-serif-fonts);
-  font-size: clamp(14px, 3vw, 17px);
   z-index: 999;
 }
 /* 모바일 버튼 */
 .header .global-menu-wrapper .mobile-btn {
-  gap: 4px;
+  gap: 6px;
   cursor: pointer;
   display: none;
 }
 .header .global-menu-wrapper .mobile-btn li {
   text-indent: -9999px;
-  width: 17px; height: 2px;
+  width: 25px; height: 3px;
   border-radius: var(--primary-border-radius);
   background-color: var(--primary-black);
 }
@@ -63,6 +62,7 @@ article {
   transition: all 0.6s;
   position: relative;
   text-decoration: none;
+  font-size: clamp(14px, 3vw, 17px);
 }
 .header .global-menu-wrapper .global-menu li a::after {
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -76,10 +76,10 @@ article {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
-.header .global-menu-wrapper .global-menu li a.active {
+/* 허버이벤트 */
+.header .global-menu-wrapper .global-menu li a:hover {
   opacity: 1;
 }
-/* 허버이벤트 */
 .header .global-menu-wrapper .global-menu li a:hover::after {
   -webkit-transform-origin: bottom left;
   -ms-transform-origin: bottom left;
@@ -130,13 +130,14 @@ article {
   text-indent: -9999px;
   background: url(../../images/footer-logo.png) no-repeat 50% / contain;
   width: 250px; height: 89px;
+  cursor: auto;
 }
 /* address */
 .footer .address {
   padding-top: 108px;
   font-size: clamp(10px, 3vw, 14px);
   font-style: normal;
-  width: 50%;
+  width: 100%;
 }
 .footer .address .flex-box {
   justify-content: flex-start;
