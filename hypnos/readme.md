@@ -1,14 +1,20 @@
 # 💻개인 프로젝트 - 반응형 작업 일지💻 #
 
-작업 일시 : 2024.06.20 ~ 2024.06.
+작업 일시 : 2024.06.20 ~ 2024.06.26
 
 작업 시 사용된 디자인 툴 : Figma, Visual Studio Code
 
 문서 및 버전 : HTML5, CSS3, JSON, JavaScript, jQuery
 
+사용 플러그인 : GSAP, ScrollTrigger, Swiper
+
 👇🏻작업물 보러가기👇🏻
-1. [코드 분석](https://www.figma.com/design/YS7BAEqnNXI3SfVpiCgOro/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B0%98%EC%9D%91%ED%98%95?node-id=0-1&t=MptEZfOnVHDvNMjr-1, "피그마로 바로가기")
-2. [구현 사이트 보러가기](https://gonghanna.github.io/artboda/)
+1. [디자인 및 코드 분석](https://www.figma.com/design/YS7BAEqnNXI3SfVpiCgOro/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B0%98%EC%9D%91%ED%98%95?node-id=27-1198&t=WK4CTOru05i0w16N-1, "피그마로 바로가기")
+2. [구현 사이트 보러가기](https://gonghanna.github.io/Personal-Project/hypnos/)
+
+## 240626 ##
+- 스크롤 이벤트 적용
+- 태블릿 및 모바일 버전 css 작업
 
 ## 240625 ##
 - index.html video 및 footer 코딩 작업
