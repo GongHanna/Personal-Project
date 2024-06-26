@@ -54,6 +54,9 @@
     margin-top: 50px;
   }
   /* 슬라이드 swiper */
+  .products .slide-wrapper {
+    padding: 0 30px;
+  }
   .products .slide-wrapper .slide-list {
     margin: 50px 0;
   }
@@ -65,23 +68,25 @@
   /***** technology *****/
   .technology {
     padding: 50px 16px;
+    height: auto;
   }
   .technology .technology-list {
-    margin-top: 50px;
+    margin: 0;
+    padding-top: 50px;
     grid-template-columns: 1fr;
-    gap: 3%;
+    gap: 74px;
   }
-  .technology .technology-list .technology-item img {
-    /* clip-path: inset(5% 20% 15% 10%); */
-    /* width: 398px; height: 383px;
-    object-fit: fill;
-    margin: 0 auto; */
+  .technology .technology-list .technology-item .mobile-img {
+    display: block;
+  }
+  .technology .technology-list .technology-item .pc-img {
+    display: none;
   }
   .technology .technology-list .technology-item:nth-child(odd) {
     padding-top: 0;
   }
   .technology .technology-list .technology-item .item-name {
-    font-size: clamp(22px, 3vw, 25px);
+    grid-row: 2;
   }
   .technology .technology-list .technology-item .item-name .spacing {
     display: inline;
@@ -102,61 +107,153 @@
     display: block;
   }
   /* 슬라이드 swiper */
+  .hotels .slide-wrapper {
+    padding: 0 30px;
+  }
   .hotels .slide-wrapper .slide-list {
     margin: 50px 0;
   }
 
   /***** best-product *****/
   .best-product {
-    padding: 80px 50px;
+    padding: 50px 16px;
+    grid-template-columns: 1fr;
+  }
+  .best-product img {
+    width: 100%;
+  }
+  .best-product .text-box .title {
+    margin: 5% 0 2%;
+  }
+  .best-product .text-box .title .spacing {
+    display: inline;
   }
   .best-product .text-box .product-name {
-    font-size: clamp(15px, 3vw, 25px);
+    font-size: 15px;
   }
   .best-product .text-box .desc {
-    font-size: clamp(13px, 3vw, 18px);
+    font-size: 13px;
   }
 
   /***** store *****/
   .store {
-    height: 500px;
+    height: 400px;
+    background: none, var(--primary-darkblue);
+  }
+  .store .text-box {
+    width: 100%;
   }
   .store .text-box .desc {
-    font-size: clamp(14px, 3vw, 18px);
+    font-size: 14px;
+    margin-bottom: 7%;
+  }
+
+  /***** guide *****/
+  .guide {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 50px 16px;
+    position: relative;
+  }
+  .guide .title-box {
+    height: auto;
+    grid-auto-rows: repeat(3, 1fr);
+    gap: 0;
+  }
+  .guide .title-box .more-btn {
+    place-self: end;
+    position: absolute;
+    top: 80px; right: 16px;
+  }
+  .guide .title-box .sub-title {
+    place-self: start;
+  }
+  .guide .title-box .title {
+    text-indent: 0;
+    background: none;
+    height: auto;
+    place-self: start;
+  }
+  .guide .guide-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+  .guide .guide-list .guide-item .img-box {
+    display: none;
+  }
+  .guide .guide-list .guide-item .mobile-img {
+    display: block;
+    width: 100%;
+  }
+  .guide .guide-list .guide-item:first-child {
+    margin-bottom: 20px;
+  }
+  .guide .guide-list .guide-item .item-type {
+    font-size: 10px;
+  }
+  .guide .guide-list .guide-item .item-name {
+    font-size: clamp(20px, 3vw, 30px);
+    margin-top: 1%;
   }
 
   /***** skills *****/
   .skills {
-    padding: 150px 50px;
+    padding: 100px 16px;
   }
   .skills .skill-list {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr 1fr 1fr;
+    grid-auto-rows: repeat(3, 1fr);
+  }
+  .skills .skill-list .skill-item .item-desc {
+    font-size: 12px;
+    width: 100%;
   }
   .skills .skill-list .skill-item .item-desc .m-spacing {
     display: block;
   }
+  .skills .skill-list .skill-item:nth-child(5) .item-desc, .skills .skill-list .skill-item:last-child .item-desc {
+    width: 100%;
+  }
 
   /***** community *****/
   .community {
-    padding: 100px 50px;
+    padding: 100px 16px;
   }
   .community .text-box {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
   .community .text-box .small-title {
-    font-size: clamp(12px, 3vw, 15px);
+    font-size: 12px;
   }
   .community .community-list {
-    grid-template-rows: minmax(200px, 250px);
-    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 300px);
+    color: #fff;
+  }
+  .community .community-list .brand {
+    background: url(./images/catalog-img.png) no-repeat 50% / cover;
+  }
+  .community .community-list .event {
+    background: url(./images/event-img.png) no-repeat 50% / cover;
+  }
+  .community .community-list .review {
+    background: url(./images/review-img.png) no-repeat 50% / cover;
   }
   .community .community-list .community-item {
-    padding-top: 130px;
+    padding-top: 170px;
+  }
+  .community .community-list .community-item .item-name {
+    color: #fff;
+  }
+  .community .community-list .community-item .item-desc {
+    font-size: 14px;
   }
 
   /***** media *****/
   .media {
-    padding: 100px 50px;
+    padding: 50px 16px;
   }
 }

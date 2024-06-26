@@ -171,7 +171,11 @@
 .technology .technology-list .technology-item:nth-child(odd) {
   padding-top: 100px;
 }
-.technology .technology-list .technology-item img {
+.technology .technology-list .technology-item .mobile-img {
+  width: 100%;
+  display: none;
+}
+.technology .technology-list .technology-item .pc-img {
   width: 100%;
 }
 .technology .technology-list .technology-item .item-name {
@@ -339,13 +343,16 @@
   width: 100%;
   overflow: hidden;
 }
-.guide .guide-list .guide-item .img-box img {
+.guide .guide-list .guide-item .mobile-img {
+  display: none;
+}
+.guide .guide-list .guide-item .img-box .pc-img {
   width: 100%;
   cursor: pointer;
   transition: .4s;
 }
 /* 허버 이벤트 */
-.guide .guide-list .guide-item img:hover {
+.guide .guide-list .guide-item .pc-img:hover {
   cursor: url("./images/cursor.png"), auto;
   transform: rotate(3deg) scale(1.1);
 }

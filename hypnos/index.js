@@ -90,8 +90,3 @@ breakpoints.add("(min-width: 700px)", () => {
 });
 
 /* 모바일에서 이미지 변환 */
-// $(window).on('resize', function () {
-//   if (600 >= $(window).width()) {
-//     $(".technology .technology-list .technology-item img").attr({ src: "./images/m-technology01.png" })
-//   }
-// }).trigger('resize');

@@ -46,7 +46,7 @@ $.ajax({
     if (data) {
       $.each(data, (idx, elem) => {
         const technologyList = `
-          <img src=${elem.imgUrl} alt=${elem.spacing}>
+          <img src=${elem.imgUrl} alt=${elem.spacing} class="pc-img">
           <h3 class="item-name">${elem.name}
             <span class="spacing">${elem.spacing}</span>
           </h3> 
@@ -90,7 +90,7 @@ $.ajax({
       $.each(data, (idx, elem) => {
         const guideList = `
           <div class="img-box">
-            <img src=${elem.imgUrl} alt=${elem.name}>
+            <img src=${elem.imgUrl} alt=${elem.name} class="pc-img">
           </div>
           <p class="item-type">${elem.type}</p>
           <h3 class="item-name">${elem.name}

@@ -32,11 +32,14 @@
     width: calc(100vw - 100px);
     position: absolute;
     top: 50px; right: 0;
-    padding: 20px;
+    padding: 50px 20px;
     background-color: #fff;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     border-top: 0.3px solid var(--primary-gray30);
     display: none;
+  }
+  .header .global-menu-wrapper .global-menu li {
+    margin: 15px 0;
   }
   /* logo */
   .header .logo {
