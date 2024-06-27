@@ -26,6 +26,19 @@
     place-content: center;
     width: 35px; height: 35px;
   }
+  .header .global-menu-wrapper .mobile-btn li {
+    transition: .4s;
+  }
+  .header .global-menu-wrapper .mobile-btn.toggle li:nth-child(1) {
+    transform: translateY(130%) rotate(45deg);
+  }
+  .header .global-menu-wrapper .mobile-btn.toggle li:nth-child(2) {
+    display: none;
+  }
+  .header .global-menu-wrapper .mobile-btn.toggle li:nth-child(3) {
+    transform: translateY(-150%) rotate(-45deg);
+  }
+  
   /* global-menu */
   .header .global-menu-wrapper .global-menu {
     text-align: center;

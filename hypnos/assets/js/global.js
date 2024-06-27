@@ -13,6 +13,7 @@ $(".header .logo a").on("click", () => {
 
 /*  모바일 버튼 클릭 시 메뉴 나타남 */
 $(".header .global-menu-wrapper .mobile-btn").on("click", () => {
+  $(".header .global-menu-wrapper .mobile-btn").toggleClass("toggle");
   $(".header .global-menu-wrapper .global-menu").slideToggle();
 });
 

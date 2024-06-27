@@ -25,6 +25,12 @@
     .header .global-menu-wrapper .mobile-btn li {
       width: 21px; height: 2px;
     }
+    .header .global-menu-wrapper .mobile-btn.toggle li:nth-child(1) {
+      transform: translateY(170%) rotate(45deg);
+    }
+    .header .global-menu-wrapper .mobile-btn.toggle li:nth-child(3) {
+      transform: translateY(-170%) rotate(-45deg);
+    }
     /* global-menu */
     .header .global-menu-wrapper .global-menu {
       width: 100vw;
