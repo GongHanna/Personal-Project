@@ -395,6 +395,7 @@
   font-weight: 400;
   font-size: clamp(20px, 3vw, 25px);
   margin-bottom: 10px;
+  color: var(--primary-blue);
 }
 .skills .skill-list .skill-item .item-desc {
   font-size: clamp(12px, 3vw, 15px);
