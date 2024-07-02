@@ -6,7 +6,7 @@
 
 👇🏻작업물 보러가기👇🏻
 1. [코드 분석](https://www.figma.com/design/0uMHtmNRGKCxuXH4RQCsQ9/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%2F-%ED%91%B8%EB%A5%B4%EB%84%B7?m=auto&t=lXRkGlmCvCeGkXiS-6, "피그마로 바로가기")
-2. [푸르넷](https://gonghanna.github.io/Personal-Project/, "푸르넷 공부방")
+2. [푸르넷](https://gonghanna.github.io/Personal-Project/)
 
 ## 240612 ##
 - 개인프로젝트 : js 이벤트 수정 및 추가 / 개인 프로젝트 완료
