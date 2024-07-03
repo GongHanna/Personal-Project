@@ -33,6 +33,12 @@
   text-align: center;
   padding: 200px 0;
   background: url(./images/company-intro.png) no-repeat 50% / contain;
+  position: relative;
+}
+.introduction .text-box {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
 }
 .introduction .small-title {
   font-family: var(--sans-serif-fonts);
