@@ -5,6 +5,8 @@ body {
   color: var(--primary-black);
   font-family: var(--sans-serif-fonts);
   font-weight: var(--font-regular);
+  word-break: break-all;
+  white-space: normal;
 }
 article {
   padding: 0 clamp(16px, 10vw, 100px);
