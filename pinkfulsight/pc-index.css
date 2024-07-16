@@ -18,19 +18,19 @@
   color: var(--primary-pink);
 }
 .main .text-box .main-title {
-  font-size: clamp(50px, 10vw, 100px);
+  font-size: clamp(50px, 6vw, 100px);
   font-family: var(--serif-fonts);
   font-weight: var(--font-black);
 }
 .main img {
-  margin-top: clamp(151px, 3vw, 191px); 
-  margin-bottom: clamp(49px, 3vw, 126px);
+  margin-top: clamp(50px, 3vw, 191px); 
+  margin-bottom: clamp(20px, 3vw, 126px);
   width: 100%;
 }
 
 /***** about *****/
 .about {
-  padding: 0px clamp(16px, 20vw, 205px);
+  padding: 0px clamp(16px, 6vw, 205px);
 }
 .about .text-box {
   margin-bottom: 89px;
@@ -113,12 +113,13 @@
   padding-bottom: 200px;
 }
 .favorite .text-box {
-  margin-bottom: clamp(40px, 10vw, 176px);
+  margin-bottom: clamp(40px, 6vw, 176px);
 }
 .favorite .favorite-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(634px, 691px);
+  grid-template-rows: clamp(408px, 50vw, 667px);
+  gap: 5.208vw;
   margin-bottom: 200px;
 }
 .favorite .exercise .right-box {
@@ -129,9 +130,10 @@
 }
 .favorite .favorite-wrapper .left-box img {
   position: absolute;
-  top: 0; left: 50%;
-  transform: translateX(-50%);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
   width: clamp(398px, 40vw, 647px);
+  object-fit: contain;
   opacity: 0;
   transition: .5s;
 }
@@ -141,6 +143,7 @@
 .favorite .favorite-wrapper .left-box .pagination {
   display: flex;
   gap: 8px;
+  justify-content: center;
   position: absolute;
   bottom: 0; left: 50%;
   transform: translateX(-50%);
@@ -183,7 +186,7 @@
   color: var(--primary-gray50);
   font-size: clamp(8px, 3vw, 12px);
   position: absolute;
-  top: 250px; right: 350px;
+  top: 13.021vw; right: 18.229vw;
 }
 .blog .blog-wrapper .blog-box {
   display: grid;
@@ -200,6 +203,7 @@
   border-radius: 30px 0 0 30px;
 }
 .blog .blog-wrapper .blog-box img {
+  object-fit: cover;
   width: clamp(398px, 40vw, 623px);
   height: clamp(398px, 40vw, 588px);
   border-radius: 30px 0 0 30px;
@@ -240,11 +244,11 @@
   padding-left: 30px;
 }
 .swiper-button-prev {
-  left: 204px;
+  left: 10.625vw;
   width: 30px; height: 209px;
 }
 .swiper-button-next {
-  right: 204px;
+  right: 10.625vw;
   width: 30px; height: 209px;
 }
 .swiper-button-prev:after {

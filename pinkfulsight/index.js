@@ -11,7 +11,13 @@ $(".header .logo a").on("click", (e) => {
   });
 });
 
-/*footer 마우스 허버 이벤트 */
+/* 모바일 버튼 클릭 시 메뉴 보이기 */
+$(".header .mobile-btn").on("click", () => {
+  $(".header .mobile-btn").toggleClass("toggle");
+  $(".header .global-menu").slideToggle();
+});
+
+/* footer 마우스 허버 이벤트 */
 $('.footer .footer-menu li a').hover(
   function () {
     $('.footer .footer-menu li a').not(this).parent().addClass('is-not-hovered');
@@ -91,7 +97,7 @@ $('.favorite-wrapper').each(function() {
   setInterval(autoSlide, 2000);
 });
 
-// .rolled-over 이벤트
+/* .rolled-over 이벤트 */
 gsap.utils.toArray('.rolled-over').forEach((txt) => {
   gsap.timeline({
     scrollTrigger: {
@@ -101,7 +107,7 @@ gsap.utils.toArray('.rolled-over').forEach((txt) => {
       scrub: 1
     }
   }).fromTo(
-    txt, // 각각의 텍스트가 움직여야 하기 때문에 매개변수의 값 txt 작성
+    txt,
     {
       y: 100,
       opacity: 0
@@ -122,6 +128,10 @@ const mainswiper = new Swiper('.main-swiper', {
   spaceBetween: 1272,
   centeredSlides: true,
   loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -132,14 +142,24 @@ const mainswiper = new Swiper('.main-swiper', {
   },
   on: {
     init: function () {
-      document.querySelectorAll('.swiper-slide').forEach(slide => {
-        slide.style.width = '1272px';
-      });
+      updateSlideWidth();
     },
     resize: function () {
-      document.querySelectorAll('.swiper-slide').forEach(slide => {
-        slide.style.width = '1272px';
-      });
+      updateSlideWidth();
     }
   }
 });
+
+function updateSlideWidth() {
+  const slides = document.querySelectorAll('.swiper-slide');
+  slides.forEach(slide => {
+    if (window.innerWidth <= 600) {
+      slide.style.width = '398px';
+    } else {
+      slide.style.width = '66.25vw';
+    }
+  });
+}
+updateSlideWidth();
+window.addEventListener('resize', updateSlideWidth);
+

@@ -1,1 +1,93 @@
 @charset "utf-8";
+
+@media (max-width: 1200px) {
+
+  /***** main *****/
+  .main {
+    margin-top: 50px;
+  }
+  .main .text-box .sub-title {
+    font-size: clamp(15px, 5vw, 18px);
+  }
+
+  /***** about *****/
+  .about .text-box {
+    margin-bottom: 40px;
+  }
+  .about .grid-box .text-box .about-desc {
+    font-size: clamp(14px, 3vw, 16px);
+  }
+
+  /***** values *****/
+  .values .flex-box {
+    gap: 100px;
+    flex-direction: column;
+    margin: 80px 0;
+  }
+  .values .flex-box .value-desc-box li p {
+    font-size: clamp(14px, 3vw, 16px);
+  }
+  .values .flex-box > img {
+    width: 50%;
+  }
+
+  /***** favorite *****/
+  .favorite {
+    background: url(./assets/images/favorite-bg1.svg) no-repeat 0 0 / 100%, url(./assets/images/favorite-bg2.svg) no-repeat 100% 100% / 100%;
+    padding-bottom: 150px;
+  }
+  .favorite .text-box {
+    margin-bottom: 40px;
+  }
+  .favorite .favorite-wrapper {
+    margin-bottom: 100px;
+  }
+  .favorite .favorite-wrapper .right-box .favorite-title {
+    font-family: var(--serif-fonts);
+    font-size: clamp(18px, 3vw, 40px);
+    margin-bottom: clamp(24px, 5vw, 50px);
+  }
+  .favorite .favorite-wrapper .right-box .favorite-desc {
+    font-size: clamp(14px, 3vw, 16px);
+  }
+
+  /***** blog *****/
+  .blog {
+    padding-bottom: 146px;
+  }
+  .blog .text-box {
+    margin-bottom: 40px;
+  }
+  .blog .blog-sub-desc {
+    top: 15.021vw;
+    font-size: clamp(8px, 3vw, 10px);
+  }
+  .blog .blog-wrapper .blog-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 500px;
+  }
+  .blog .blog-wrapper .blog-box video {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+  .blog .blog-wrapper .blog-box img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+  .blog .blog-wrapper .blog-box .text-box .flex-box {
+    margin-bottom: 42px;
+  }
+  .blog .blog-wrapper .blog-box .text-box .flex-box .blog-title {
+    font-size: clamp(18px, 3vw, 20px);
+  }
+  .blog .blog-wrapper .blog-box .text-box .flex-box .blog-date {
+    font-size: clamp(12px, 3vw, 14px);
+  }
+  .blog .blog-wrapper .blog-box .text-box .blog-text-box {
+    margin-bottom: 42px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}

@@ -1,1 +1,85 @@
 @charset "utf-8";
+
+@media (max-width: 600px) {
+  /***** main *****/
+  .main {
+    margin-top: 80px;
+    padding-bottom: 65px;
+    grid-template-columns: 1fr;
+    background: #FFF0E9;
+  }
+  .main .text-box {
+    grid-row: 2;
+    text-align: center;
+  }
+  .main img {
+    margin-bottom: 0;
+  }
+  .main .text-box .sub-title {
+    font-size: clamp(15px, 5vw, 18px);
+  }
+
+  /***** about *****/
+  .about .grid-box {
+    grid-template-columns: 1fr;
+  }
+  .about .grid-box .text-box {
+    padding: 30px;
+  }
+
+  /***** values *****/
+  .values {
+    padding-bottom: 0;
+  }
+  .values .flex-box .value-desc-box {
+    padding-left: 58px;
+  }
+  .values .flex-box .value-desc-box li:first-child {
+    margin-bottom: 50px;
+  }
+  .values .flex-box .value-desc-box li p {
+    margin-left: -20px;
+    padding-top: 10px;
+  }
+  .values .flex-box > img {
+    width: 100%;
+  }
+
+  /***** favorite *****/
+  .favorite {
+    background: url(./assets/images/favorite-bg1.svg) no-repeat 50% 23% / 100%, url(./assets/images/favorite-bg2.svg) no-repeat 50% 100% / 100%;
+    padding-bottom: 50px;
+  }
+  .favorite .favorite-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px;
+  }
+  .favorite .exercise .right-box {
+    grid-row-start: 2;
+  }
+  
+  /***** blog *****/
+  .blog .text-box {
+    margin-bottom: 60px;
+  }
+  .blog .blog-sub-desc {
+    top: 34vw; right: 30px;
+  }
+  .blog .blog-wrapper .blog-box {
+    grid-template-rows: auto 350px;
+  }
+  .blog .blog-wrapper .blog-box .text-box {
+    width: 90%;
+  }
+  .blog .blog-wrapper .blog-box .text-box .blog-text-box .blog-desc:nth-child(n+3) {
+    display: none;
+  }
+
+  /***** work *****/
+  .work .work-img-box {
+    margin: 40px 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+}
