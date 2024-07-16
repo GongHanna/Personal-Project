@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+@media (max-width: 850px) {
+  .favorite .favorite-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80vw;
+  }
+  .favorite .favorite-wrapper .left-box img {
+    width: 80%;
+  }
+}
+
 @media (max-width: 600px) {
   /***** main *****/
   .main {
@@ -51,8 +61,13 @@
     padding-bottom: 50px;
   }
   .favorite .favorite-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-rows: 450px;
+    grid-template-rows: 110vw;
+  }
+  .favorite .favorite-wrapper .left-box img {
+    max-width: 568px;
+    min-width: 308px;
+    margin: 0 auto;
+    width: 100%;
   }
   .favorite .exercise .right-box {
     grid-row-start: 2;

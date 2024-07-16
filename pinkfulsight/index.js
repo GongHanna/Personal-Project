@@ -154,7 +154,7 @@ function updateSlideWidth() {
   const slides = document.querySelectorAll('.swiper-slide');
   slides.forEach(slide => {
     if (window.innerWidth <= 600) {
-      slide.style.width = '398px';
+      slide.style.width = '90vw';
     } else {
       slide.style.width = '66.25vw';
     }
