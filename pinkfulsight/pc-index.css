@@ -73,6 +73,7 @@
   text-align: left;
 }
 .values .text-box .global-main-title {
+  font-family: var(--sans-serif-fonts);
   text-align: left;
 }
 .values .flex-box {
