@@ -28,7 +28,7 @@
     font-size: clamp(14px, 3vw, 16px);
   }
   .values .flex-box > img {
-    width: 50%;
+    width: 100%;
   }
 
   /***** favorite *****/

@@ -5,6 +5,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: 80vw;
   }
+  .favorite .exercise .right-box {
+    grid-row-start: 2;
+  }
   .favorite .favorite-wrapper .left-box img {
     width: 80%;
   }
@@ -68,9 +71,6 @@
     min-width: 308px;
     margin: 0 auto;
     width: 100%;
-  }
-  .favorite .exercise .right-box {
-    grid-row-start: 2;
   }
   
   /***** blog *****/
