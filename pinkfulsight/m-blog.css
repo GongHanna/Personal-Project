@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@media (max-width: 600px) {
+  pre {
+    font-size: 14px;
+  }
+  .blog-wrapper .text-box .blog-text-box .blog-desc {
+    font-size: 14px;
+  }
+}
